@@ -10,23 +10,23 @@ html{
 }
 .banner-slider{
     display: flex;
-    width: 100%;
+    width: 85%;
     height: 100%;
     animation: slide;
-    animation-duration: 7s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
 }
 .slider{
-    width: 1400px;
+    width: 1440px;
 }
 .slider img{
-    width: 1400px;
-    height: 500px;
+    width: 1600px;
+    height: 550px;
 }
 
 @keyframes slide {
     0%{transform: translateX(0%);}
-    100%{transform: translateX(-165%);}
+    100%{transform: translateX(-150%);}
     
 }
 .banner-productos{
