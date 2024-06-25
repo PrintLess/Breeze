@@ -1,0 +1,138 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+.banner-inicio{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px;  
+}
+.banner-slider{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    animation: slide;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+.slider{
+    width: 1400px;
+}
+.slider img{
+    width: 1400px;
+    height: 500px;
+}
+
+@keyframes slide {
+    0%{transform: translateX(0%);}
+    100%{transform: translateX(-165%);}
+    
+}
+.banner-productos{
+    background-image: url('/img/productos_banner.png');
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-nosotros{
+    background-image: url('/img/Banner\ nosotros.png');
+    width: 100%;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-1{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+.items-1{
+    width: 659px;
+    margin-bottom: 150px;
+    text-align: justify;
+    font-family: inter;
+    font-size: 18px;
+}
+.items-1 button{
+    margin-top: 30px;
+    width: 182px;
+    border-radius: 30px;
+    background-color: #2A2A27;
+    color: #fff;
+    height: 40px;
+}
+.items-1 button:hover{
+    background-color: #0d0d0c;
+}
+
+.container-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    background-color: #42423D;
+    color: #fff;
+    font-family: inter;
+    width: 100%;
+    height: 767px;
+    margin-top: 150px;
+}
+.container-2 div img{
+    margin-left: 0px;
+}
+.items-2{
+    width: 452px;
+    text-align: center;
+}
+.items-2 button{
+    margin-top: 30px;
+    width: 182px;
+    border-radius: 30px;
+    background-color: #2A2A27;
+    color: #fff;
+    height: 40px;
+    border: solid;
+}
+.items-2 button:hover{
+    background-color: #0d0d0c;
+}
+.container-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    background-color: #42423D;
+    color: #fff;
+    font-family: inter;
+    width: 100%;
+    height: 767px;
+    margin-top: 100px;
+}
+.items-3{
+    width: 452px;
+    text-align: center;
+}
+.items-3 button{
+    margin-top: 30px;
+    width: 182px;
+    border-radius: 30px;
+    background-color: #2A2A27;
+    color: #fff;
+    height: 40px;
+    border: solid;
+}
+.items-3 button:hover{
+    background-color: #0d0d0c;
+}
