@@ -22,7 +22,8 @@ nav ul li a{
     color: white;
     text-decoration: none;
     padding: 14px  20px;
-    display: block;
+    display: flex;
+    align-items: center;
 }
 nav ul li a:hover{
     background-color: #504e4e;
