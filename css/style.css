@@ -204,3 +204,8 @@ html{
 }
 
 
+@media (max_width: 768px){
+    body{
+        background-color: aqua;
+    }
+}
