@@ -29,15 +29,15 @@ html{
     
 }
 .banner-productos{
-    width: 100%;
+    width: 100vw;
     height: auto;
     box-shadow: 5px 8px 5px #282825;
     margin-bottom: 50px;
 }
 .banner-productos img{
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
+    width: 100vw;
+    height: auto;
+    
 }
 
 .container-1{
@@ -143,6 +143,9 @@ html{
 .items-3 button:hover{
     background-color: #0d0d0c;
 }
+
+/* Carta estilos */
+
 .titulo{
     text-decoration: underline;
 }
@@ -178,27 +181,26 @@ html{
 .nav-lateral ul li a:hover{
     text-decoration: underline;
 }
-.bebidas , .postres ,.granos{
+
+.bebidas , .postres, .granos{
     display: grid;
-    grid-template-columns: 450px 400px;
-    grid-template-rows: auto auto;
-    justify-content: center;
-    column-gap: 100px;
-    margin-top: 30px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2,auto);
+    align-items: center;
+    justify-content: start;
     border-bottom: 1px solid #afabab;
-    margin-left: 20%;
-    
+    column-gap: 100px;
+    margin-top: 20px;
+    margin-left: 420px;
 }
-.bebidas div ,.postres div ,.granos div{
+.bebidas div ,.postres div,.granos div{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    gap: 50px;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(2,auto);
     text-align: center;
     justify-content: center;
     align-items: center;
     padding-bottom: 100px;
-    
 }
 .bebidas div img ,.postres div img, .granos div img{
     grid-row: 1/3;
@@ -209,28 +211,17 @@ html{
 }
 .bebidas div h5 , .postres div h5, .granos div h5{
     padding-top: 30px;
-    width: 130px;
+    width: 150px;
     margin-top: 40px;
 }
 
 /* Formato para movil */
-@media (max-width: 767px){
+@media (max-width: 768px){
+
+    /* Inicio */
     .banner-inicio{
-        width: 100%;
         display: none;
-        
     }
-    /* .slider{
-        
-    }
-    .slider img{
-        
-    }
-    @keyframes slide {
-        0%{transform: translateX(0%);}
-        100%{transform: translateX(-150%);}
-        
-    } */
     .container-1{
         flex-direction: column-reverse;
         gap: 20px;
@@ -266,5 +257,53 @@ html{
         flex-direction: column-reverse;
         gap: 20px;
         margin-bottom: 100px;
+    }
+
+    /* Carta */
+    .banner-productos{
+        display: none;
+    }
+    .caja-titulo{
+        margin-left: 5%;
+        width: 90vw;
+        margin-top: 50px;
+    }
+    .banner-productos{
+        width: 100vw;
+    }
+    .banner-productos img{
+        width: 100vw;
+        object-fit: cover;
+    }
+
+    .nav-lateral{
+        display: none;
+    }
+
+    .bebidas,.postres,.granos{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,auto);
+        margin-left: 0px;
+    }
+    .carta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 100vw;
+    }
+    .bebidas div{
+        gap: 0px;
+    }
+    .bebidas img ,.postres img,.granos img{
+        grid-column: 1/2;
+        width: 50vw;
+        height: auto;
+    }
+
+    /* Nosotros */
+    .banner-nosotros{
+        display: none;
     }
 }
