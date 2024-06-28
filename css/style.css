@@ -225,11 +225,10 @@ html{
     .container-1{
         flex-direction: column-reverse;
         gap: 0;
-        height: 100vh;
         margin-bottom: 50px;
         background-color: #42423D;
         color: #fff;
-        height: 80vh;
+        height: 90vh;
     }
     .container-1 p , .container-2 p, .container-3 p{
         text-align: justify;
@@ -248,7 +247,7 @@ html{
         flex-direction: column;
         align-items: center;
         margin-bottom: 0px;
-        gap: 10px;
+        gap: 5px;
     }
     .items-1 button , .items-2 button ,.items-3 button{
         width: 250px;
@@ -260,14 +259,16 @@ html{
         flex-direction: column;
         gap: 0;
         margin-bottom: 50px;
-        height: 80vh;
+        height: 90vh;
     }
     .container-3{
         flex-direction: column-reverse;
         gap: 0;
-        height: 80vh;
-        margin-top: 0;
+        height: 100vh;
         margin-bottom: 50px;
+        background-color: #42423D;
+        color: #fff;
+        height: 90vh;
     }
 
     /* Carta */
@@ -309,7 +310,7 @@ html{
     }
     .bebidas img ,.postres img,.granos img{
         grid-column: 1/2;
-        width: 50vw;
+        width: 40vw;
         height: auto;
     }
 
