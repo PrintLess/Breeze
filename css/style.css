@@ -45,7 +45,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 150px;
+    gap: 50px;
     height: 100vh;
     width: 100vw;
     
@@ -60,7 +60,7 @@ html{
 }
 .container-1 img{
     box-shadow: 5px 8px 5px #282825;
-    max-width: 100%; 
+    width: 40vw; 
     height: auto; 
     display: block; 
 }
@@ -80,7 +80,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 150px;
+    gap: 50px;
     background-color: #42423D;
     color: #fff;
     font-family: inter;
@@ -114,7 +114,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 150px;
+    gap: 50px;
     background-color: #42423D;
     color: #fff;
     font-family: inter;
@@ -184,14 +184,14 @@ html{
 
 .bebidas , .postres, .granos{
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2,auto);
     align-items: center;
     justify-content: start;
     border-bottom: 1px solid #afabab;
-    column-gap: 100px;
+    column-gap: 50px;
     margin-top: 20px;
-    margin-left: 420px;
+    margin-left: 300px;
 }
 .bebidas div ,.postres div,.granos div{
     display: grid;
@@ -226,13 +226,13 @@ html{
         flex-direction: column-reverse;
         gap: 20px;
         margin-bottom: 50px;
-        background-color: #42423D;
-        color: #fff;
-        height: 91vh;
+        /* background-color: #42423D; */
+        /* color: #fff; */
+        height: 92vh;
     }
     .container-1 p , .container-2 p, .container-3 p{
         text-align: justify;
-        font-size: 16px;  
+        font-size: 13px;  
     }
     .container-1 img,.container-2 img ,.container-3 img{
         width: 60vw;
@@ -250,10 +250,11 @@ html{
         gap: 5px;
     }
     .items-1 button , .items-2 button ,.items-3 button{
-        width: 60vw;
+        width: 50vw;
         height: 50px;
         font-size: large;
         border: 1px solid;
+        font-size: 13px;  
     }
     .container-2{
         flex-direction: column;
@@ -290,6 +291,8 @@ html{
     }
 
     .bebidas,.postres,.granos{
+        align-items: center;
+        justify-content: center;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3,auto);
         margin-left: 0px;
@@ -303,6 +306,7 @@ html{
         width: 100vw;
     }
     .bebidas div{
+        height: auto;
         gap: 0px;
     }
     .bebidas img ,.postres img,.granos img{
@@ -312,8 +316,152 @@ html{
     }
 
 }
+
+/* FORMATO TABLET */
 @media (min-width: 769px ) and (max-width: 1024px){
-    .galeria-grid{
-        grid-template-columns: repeat(2, 1fr);
+    .banner-inicio{
+        width: 100vw;
+        height: auto;
+    }
+    .slider{
+        width: 100vw;
+        height: auto;
+        
+    }
+    .slider img{
+        object-position: center;
+        width: 100vw;
+        height: auto;
+    }
+    .container-1{
+        width: 100vw;
+        height: 100vh;
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+    .items-1 ,.items-2 ,.items-3{
+        width: 50vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+        text-align: justify;
+
+    }
+    .items-1 button , .items-2 button ,.items-3 button{
+        width: 50vw;
+        height: 50px;
+        font-size: large;
+        border: 1px solid;
+    }
+    .container-2{
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        gap: 20px;
+    }
+    .container-3{
+        flex-direction: column-reverse;
+        width: 100vw;
+        height: 100vh;
+        gap: 20px;
+    }
+    .container-1 img, .container-2 img, .container-3 img{
+        width: 50vw;
+        height: auto;
+    }
+    /* carta */
+    .banner-productos{
+        width: 100vw;
+        height: auto;
+    }
+    .nav-lateral{
+        display: none;
+    }
+    .carta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 100vw;
+    }
+    .bebidas , .postres{
+        grid-template-columns: repeat(2,auto);
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .granos{
+        grid-template-columns: repeat(1,auto);
+        margin-left: 0;
+        margin-top: 20px;
+
+    }
+    .caja-titulo{
+        width: 90vw;
+        height: auto;
+        margin-left: 5%;
+    }
+    .titulo{
+        margin: 0;
+        padding: 0;
+    }
+    .bebidas img ,.postres img,.granos img{
+        width: 20vw;
+        height: auto;
+    }
+    .carta{
+        width: auto;
+        align-items: start;
+        margin-left: 10vw;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1519px){
+    /* carta */
+    .banner-productos{
+        width: 100vw;
+        height: auto;
+    }
+    .nav-lateral{
+        display: none;
+    }
+    .carta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 90vw;
+        align-items: start;
+        padding-left: 10vw;
+    }
+    .bebidas , .postres{
+        width: 90vw;
+        height: auto;
+        grid-template-columns: repeat(3,auto);
+        margin-left: 0;
+        margin-top: 20px;
+        gap: 5px;
+    }
+    .granos{
+        grid-template-columns: repeat(1,auto);
+        margin-left: 0;
+        margin-top: 20px;
+        width: 90vw;
+        height: auto;
+    }
+    .caja-titulo{
+        width: 90vw;
+        height: auto;
+        margin-left: 5%;
+    }
+    .titulo{
+        margin: 0;
+        padding: 0;
+    }
+    .bebidas img ,.postres img,.granos img{
+        width: 15vw;
+        height: auto;
     }
 }
