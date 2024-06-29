@@ -224,24 +224,24 @@ html{
     }
     .container-1{
         flex-direction: column-reverse;
-        gap: 0;
+        gap: 20px;
         margin-bottom: 50px;
         background-color: #42423D;
         color: #fff;
-        height: 90vh;
+        height: 91vh;
     }
     .container-1 p , .container-2 p, .container-3 p{
         text-align: justify;
         font-size: 16px;  
     }
     .container-1 img,.container-2 img ,.container-3 img{
-        width: 70vw;
+        width: 60vw;
         height: auto;
         object-fit: cover;
         
     }
     .items-1 , .items-2 ,.items-3{
-        width: 70vw;
+        width: 60vw;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -250,25 +250,22 @@ html{
         gap: 5px;
     }
     .items-1 button , .items-2 button ,.items-3 button{
-        width: 250px;
+        width: 60vw;
         height: 50px;
         font-size: large;
         border: 1px solid;
     }
     .container-2{
         flex-direction: column;
-        gap: 0;
+        gap: 20px;
         margin-bottom: 50px;
-        height: 90vh;
+        height: 91vh;
     }
     .container-3{
         flex-direction: column-reverse;
-        gap: 0;
-        height: 100vh;
+        gap: 20px;
         margin-bottom: 50px;
-        background-color: #42423D;
-        color: #fff;
-        height: 90vh;
+        height: 93vh;
     }
 
     /* Carta */
@@ -314,4 +311,9 @@ html{
         height: auto;
     }
 
+}
+@media (min-width: 769px ) and (max-width: 1024px){
+    .galeria-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

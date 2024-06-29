@@ -99,7 +99,6 @@
 }
 .tienda-container{
     display: flex;
-    /* background-color: aquamarine; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -146,7 +145,7 @@
     font-weight: bold;
     font-size: small;
 }
-.item-card img{
+.tienda-imagen{
     box-shadow: 5px 5px 5px #282825;
 }
 .icon{
@@ -158,8 +157,10 @@
     justify-content: center;
     border-radius: 10px;
 }
+
+/* FORMATO PARA MOBILE */
+
 @media (max-width: 768px){
-    /* Nosotros */
     .banner-nosotros{
         display: none;
     }
@@ -198,5 +199,55 @@
     .subtitulo{
         margin-top: 20px;
     }
-    
+    .nosotros-content{
+        width: 100vw;
+        height: auto;
+    }
+    .nosotros-content div{
+        width: 90vw;
+        text-align: justify;
+    }
+    .tienda-container{
+
+    }
+    .titulos{
+        width: 90vw;
+        height: auto;
+
+    }
+    .tienda-cards{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .item-card{
+        width: 90vw;
+        height: auto;
+    }
+    .tienda-imagen{
+        width: 50vw;
+        height: auto;
+    }
+}
+@media (max-width: 430px){
+    .item-card{
+        flex-direction: column;
+    }
+    .tienda-imagen{
+        width: 60vw;
+        height: auto;
+    }
+    .item-card h5 ,.item-card p ,.item-card .icon{
+        width: 60vw;
+    }
+    .icon a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* FORMATO PARA TABLET */
+@media (min-width: 769px ) and (max-width: 1024px){
+
 }
