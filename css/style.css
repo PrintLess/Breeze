@@ -5,6 +5,7 @@ html{
 }
 .banner-inicio{
     width: 100%;
+    height: auto;
     box-shadow: 0 4px 8px;  
     overflow: hidden;
 }
@@ -45,7 +46,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 150px;
     height: 100vh;
     width: 100vw;
     
@@ -80,7 +81,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 150px;
     background-color: #42423D;
     color: #fff;
     font-family: inter;
@@ -89,6 +90,9 @@ html{
     margin-top: 0px;
 }
 .container-2 div img{
+    width: 40vw; 
+    height: auto; 
+    display: block;     
     margin-left: 0px;
     box-shadow: 5px 8px 5px #282825;
 }
@@ -114,7 +118,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 150px;
     background-color: #42423D;
     color: #fff;
     font-family: inter;
@@ -124,6 +128,9 @@ html{
     margin-bottom: 100px;
 }
 .container-3 img{
+    width: 40vw; 
+    height: auto; 
+    display: block; 
     box-shadow: 5px 8px 5px #282825;
 }
 .items-3{
@@ -182,6 +189,7 @@ html{
     text-decoration: underline;
 }
 
+
 .bebidas , .postres, .granos{
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -189,7 +197,7 @@ html{
     align-items: center;
     justify-content: start;
     border-bottom: 1px solid #afabab;
-    column-gap: 50px;
+    column-gap: 30px;
     margin-top: 20px;
     margin-left: 300px;
 }
@@ -323,6 +331,9 @@ html{
         width: 100vw;
         height: auto;
     }
+    .nav-lateral{
+        display: none;
+    }
     .slider{
         width: 100vw;
         height: auto;
@@ -417,38 +428,44 @@ html{
         margin-left: 10vw;
     }
 }
-@media (min-width: 1025px) and (max-width: 1519px){
+@media (min-width: 1025px) and (max-width: 1512px){
     /* carta */
     .banner-productos{
         width: 100vw;
         height: auto;
     }
     .nav-lateral{
-        display: none;
+        width: 15vw;
+        height: auto;
+        margin-top: 10px;
+        position: absolute;
     }
+    .nav-lateral ul{
+        padding: 20px;
+    }
+
     .carta{
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
         height: auto;
         width: 90vw;
         align-items: start;
-        padding-left: 10vw;
+        padding-left: 20vw;
     }
     .bebidas , .postres{
-        width: 90vw;
+        width: 20vw;
         height: auto;
-        grid-template-columns: repeat(3,auto);
+        grid-template-columns: repeat(2,auto);
         margin-left: 0;
         margin-top: 20px;
         gap: 5px;
     }
     .granos{
-        grid-template-columns: repeat(1,auto);
+        grid-template-columns: repeat(2,auto);
         margin-left: 0;
         margin-top: 20px;
-        width: 90vw;
+        width: 20vw;
         height: auto;
     }
     .caja-titulo{
@@ -461,7 +478,7 @@ html{
         padding: 0;
     }
     .bebidas img ,.postres img,.granos img{
-        width: 15vw;
+        width: 20vw;
         height: auto;
     }
 }

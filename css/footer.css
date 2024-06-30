@@ -1,4 +1,7 @@
 footer{
+    width: 100vw;
     background-color: #282825;
-    display: flex;
+}
+footer div span{
+    color: white;
 }

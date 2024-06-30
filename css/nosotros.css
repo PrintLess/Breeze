@@ -1,7 +1,7 @@
 .banner-nosotros{
     background-image: url('/img/Banner\ nosotros.png');
-    width: 1fr;
-    height: 550px;
+    width: 100vw;
+    height: 70vh;
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 5px 8px 5px #282825;
@@ -157,6 +157,9 @@
     justify-content: center;
     border-radius: 10px;
 }
+ .icon:hover{
+    background-color: #504e4e;
+}
 
 /* FORMATO PARA MOBILE */
 
@@ -168,24 +171,35 @@
         height: auto;
     }
     .inicio div{
-        width: 90vw;
+        width: 80vw;
         height: auto;
+    }
+    .inicio div p{
+        font-size: 16px;
+    }
+    .inicio div h4{
+        font-size: 20px;
     }
     .valores-grid{
         margin-top: 10px;
         height: auto;
-        grid-template-columns: 100vw;
+        grid-template-columns: 50vw;
         grid-template-rows: auto;
         justify-items: center;
     }
     .item-valores{
-        width: 90vw;
+        width: 80vw;
         height: auto;
         margin-top: 50px;
     }
     .item-valores p{
         margin-top: 20px;
+        font-size: 16px;
         text-align: justify;
+    }
+    .item-valores img{
+        width: 55px;
+        height: auto;
     }
     .item-valores1{
         grid-area: 1/1; 
@@ -204,14 +218,17 @@
         height: auto;
     }
     .nosotros-content div{
-        width: 90vw;
+        width: 80vw;
         text-align: justify;
     }
-    .tienda-container{
-
+    .nosotros-content div p{
+        font-size: 16px;
+    }
+    .nosotros-content div h5{
+        font-size: 20px;
     }
     .titulos{
-        width: 90vw;
+        width: 80vw;
         height: auto;
 
     }
@@ -220,11 +237,11 @@
         gap: 50px;
     }
     .item-card{
-        width: 90vw;
+        width: 70vw;
         height: auto;
     }
     .tienda-imagen{
-        width: 50vw;
+        width: 30vw;
         height: auto;
     }
 }
@@ -249,5 +266,96 @@
 
 /* FORMATO PARA TABLET */
 @media (min-width: 769px ) and (max-width: 1024px){
-
+    .banner-nosotros{
+        width: 100vw;
+        height: 50vw;
+    }
+    .inicio div{
+        width: 80vw;
+        height: auto;
+    }
+    .inicio div p{
+        font-size: 16px;
+    }
+    .inicio div h4{
+        font-size: 20px;
+    }
+    .valores-grid{
+        grid-template-columns: repeat(3, 30vw);
+        font-size: 16px;
+    }
+    .nosotros-content div{
+        width: 80vw;
+        height: auto;
+    }
+    .nosotros-content div p{
+        font-size: 16px;
+    }
+    .nosotros-content div h5{
+        font-size: 20px;
+    }
+    .titulos{
+        width: 80vw;
+        height: auto;
+    }
+    .tienda-cards{
+        column-gap: 10px;
+        row-gap: 50px;
+        flex-direction: column;
+    }
+    .item-card{
+        width: 60vw;
+        height: auto;
+    }
+    .tienda-imagen{
+        width: 30vw;
+        height: auto;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1512px){
+    banner-nosotros{
+        width: 100vw;
+        height: 50vw;
+    }
+    .inicio div{
+        width: 80vw;
+        height: auto;
+    }
+    .inicio div p{
+        font-size: 16px;
+    }
+    .inicio div h4{
+        font-size: 20px;
+    }
+    .valores-grid{
+        grid-template-columns: repeat(3, 30vw);
+        font-size: 16px;
+    }
+    .nosotros-content div{
+        width: 80vw;
+        height: auto;
+    }
+    .nosotros-content div p{
+        font-size: 16px;
+    }
+    .nosotros-content div h5{
+        font-size: 20px;
+    }
+    .titulos{
+        width: 80vw;
+        height: auto;
+    }
+    .tienda-cards{
+        column-gap: 10px;
+        row-gap: 50px;
+        flex-direction: column;
+    }
+    .item-card{
+        width: 60vw;
+        height: auto;
+    }
+    .tienda-imagen{
+        width: 30vw;
+        height: auto;
+    }
 }
