@@ -6,3 +6,9 @@
     justify-content: center;
     gap: 150px;
 }
+
+.container{
+    border: 1px solid black;
+    padding: 15%;
+    border-radius: 25px;
+}
