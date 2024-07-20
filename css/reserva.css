@@ -17,13 +17,15 @@
     gap: 5px;
     justify-content: center;
     height: 90vh;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     border: 1px solid black;
+    padding-top: 5%;
 }
 .btn{
     width: 120px;
     text-align: center;
-   
+    margin-top: 2%;
+
 }
 
 .datos{
@@ -61,6 +63,11 @@
 .llamada img{
     width: 69px;
     height: auto;
+}
+.container h3{
+    text-align: center;
+    margin-bottom: 40px;
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
