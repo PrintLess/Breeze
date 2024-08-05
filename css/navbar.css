@@ -28,7 +28,7 @@ nav ul li a:hover{
     background-color: #504e4e;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 834px) {
     nav{
         width: 100vw;
         height: 350px;
